@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User-icon</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <style type="text/css">
+        body{
+            margin:0;
+            padding:0;
+            background: #9c88ff;
+        }
+
+        .middle{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .sm-container{
+            text-align: center;
+        }
+
+        .sm-container i{
+            color: #f5f6fa;
+            padding:20px;
+            font-size:20px;
+            cursor:pointer;
+            transition:50ms;
+        }
+
+        .sm-container i:hover{
+            transform: scale(1.2)
+        }
+
+        .sm-menu{
+            background: #487eb0;
+            position:absolute;
+            border-radius:8px;
+            display: none;
+        }
+
+        .sm-menu::before{
+            content:"";
+            width:10px;
+            height: 10px;
+            position:absolute;
+            background:#487eb0;
+            top:-5px;
+            left: 50%;
+            transform:translateX(-50%) rotate(45deg);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="middle">
+        <div class="sm-container">
+        <i class="show-btn fas fa-user"></i>
+        <div class="sm-menu">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(".show-btn").click(function(){
+            $(".sm-menu").fadeToggle("fast");
+        });
+    </script>
+</body>
+</html>

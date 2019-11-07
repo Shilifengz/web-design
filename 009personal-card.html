@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>personal-card</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            font-family:'Montserrat-Regular';
+            box-sizing:border-box;
+        }
+
+        .testimonial-section{
+            background: #3498db;
+            padding:40px 0;
+        }
+
+        .inner-width{
+            max-width: 1200px;
+            margin:auto;
+            padding:0 20px;
+        }
+
+        .testimonial-section h1{
+            text-align:center;
+            color:#333;
+            font-size:24px;
+        }
+
+        .border{
+            width:100px;
+            height: 3px;
+            background: #333;
+            margin: 40px auto;
+        }
+
+        .testimonial{
+            background: #f1f1f1;
+            padding:40px;
+            overflow:hidden;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        .test-info{
+            display: flex;
+            height: 60px;
+            align-items:center;
+        }
+
+        .test-pic{
+            width:50px !important;
+            /* 图片剪不成圆形 */
+            border-radius: 10%;
+            margin-right:15px;
+        }
+
+        .test-name{
+            font-size:12px;
+            color:#333;
+        }
+
+        .test-name span{
+            display: block;
+            font-size:14px;
+            font-weight: 700;
+            color:#3498db;
+        }
+
+        .testimonial p{
+            font-size:12px;
+            line-height: 22px;
+            margin-top:20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="testimonial-section">
+        <div class="inner-width">
+            <h1>What Client Says</h1>
+            <div class="border"></div>
+
+            <div class="slides owl-carousel">
+                <div class="testimonial">
+                    <div class="test-info">
+                        <img class="test-pic" src="images/sjlwz.jpeg" alt="">
+                        <div class="test-name">
+                            <span>Client1</span>
+                            @client1
+                        </div>
+                    </div>
+
+                    <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                    </p>
+                </div>
+
+
+                    <div class="testimonial">
+                        <div class="test-info">
+                            <img class="test-pic" src="images/sjlwz.jpeg" alt="">
+                            <div class="test-name">
+                                <span>Client2</span>
+                                @client2
+                            </div>
+                        </div>
+    
+                        <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                        </p>
+                    </div>
+
+
+                    <div class="testimonial">
+                        <div class="test-info">
+                            <img class="test-pic" src="images/sjlwz.jpeg" alt="">
+                            <div class="test-name">
+                                <span>Client3</span>
+                                @client3
+                            </div>
+                        </div>
+    
+                        <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                680:{
+                    items:2
+                },
+                960:{
+                    items:3
+                }
+            }
+        });
+    
+    </script>
+</body>
+</html>
